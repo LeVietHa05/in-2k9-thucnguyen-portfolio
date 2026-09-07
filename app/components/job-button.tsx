@@ -10,6 +10,7 @@ type JobButtonProps = {
   hoverColor?: string;
   className?: string;
   target?: "_self" | "_blank";
+  onClick?: () => void;
 };
 
 export function JobButton({
@@ -19,6 +20,7 @@ export function JobButton({
   hoverColor = "var(--main2)",
   className = "",
   target,
+  onClick,
 }: JobButtonProps) {
   const style = {
     "--job-button-color": color,
@@ -29,6 +31,12 @@ export function JobButton({
     <Link
       href={href}
       target={target}
+      onClick={(event) => {
+        if (onClick) {
+          event.preventDefault();
+          onClick();
+        }
+      }}
       rel={target === "_blank" ? "noopener noreferrer" : undefined}
       className={`group job-button ${className} rounded-full   ${climateCrisis.className}`}
       style={style}

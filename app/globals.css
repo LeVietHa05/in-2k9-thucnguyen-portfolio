@@ -59,6 +59,31 @@ body {
   z-index: 1;
 }
 
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-counter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[orbit_24s_linear_infinite\],
+  .animate-\[orbit-counter_24s_linear_infinite\] {
+    animation-play-state: paused;
+  }
+}
+
 .job-button__label {
   align-self: center;
   text-align: center;
