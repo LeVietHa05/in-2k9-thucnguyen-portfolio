@@ -79,18 +79,20 @@ export default function FoodOrbit() {
               transform: `  rotate(${food.angle}deg) translateY(-300px) rotate(-${food.angle}deg)`,
             }}
           >
-            <div
-              className={`relative flex aspect-square items-center justify-center rounded-full ${food.size} ${
-                food.angle % 90 === 0 ? "bg-[var(--main4)]" : "bg-[var(--main2)]"
-              }`}
-            >
-              <Image
-                src={food.src}
-                alt={food.alt}
-                width={180}
-                height={180}
-                className="h-[82%] w-[82%] object-contain"
-              />
+            <div className="animate-[orbit-counter_24s_linear_infinite]">
+              <div
+                className={`relative flex aspect-square items-center justify-center rounded-full ${food.size} ${
+                  food.angle % 90 === 0 ? "bg-[var(--main4)]" : "bg-[var(--main2)]"
+                }`}
+              >
+                <Image
+                  src={food.src}
+                  alt={food.alt}
+                  width={180}
+                  height={180}
+                  className={`h-[82%] w-[82%] object-contain rotate(${food.angle}deg)`}
+                />
+              </div>
             </div>
           </div>
         ))}
