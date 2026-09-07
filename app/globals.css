@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #efe2d2;
+  --foreground: #23451b;
+  --main1: #be3f2a;
+  --main2: #33592a;
+  --main3: #23451b;
+  --main4: #e69d3b;
+  --main5: #f3d477;
+  --main6: #efe2d2;
 }
 
 @theme inline {
@@ -12,15 +18,54 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+.job-button {
+  position: relative;
+  display: flex;
+  width: min(100%, 339px);
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  overflow: hidden;  
+  padding:1rem  1.5rem;
+  color: var(--main5);
+  background: var(--job-button-color);
+  font-size: 1.125rem; 
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+ 
+
+.job-button:hover,
+.job-button:focus-visible {
+  background: var(--job-button-hover-color);
+  color: var(--main4);
+  transform: translateY(-3px);
+}
+
+.job-button:focus-visible {
+  outline: 3px solid var(--main4);
+  outline-offset: 4px;
+}
+
+.job-button__label,
+.job-button__arrow {
+  position: relative;
+  z-index: 1;
+}
+
+.job-button__label {
+  align-self: center;
+  text-align: center;
+}
+
+.job-button__arrow {
+  align-self: flex-center;
+  font-size: 1.5rem;
+  line-height: 1;
 }
