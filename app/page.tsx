@@ -74,7 +74,7 @@ export default function Home() {
             <p className="mt-5 max-w-[330px] text-sm font-bold leading-[1.2] md:text-[24px]">
               Here, your role is to become a chef. You&apos;re learning through a recipe to create a dish that is far more than just food on a plate. You are learning to craft a life, piece by piece, from the ground up.
             </p>
-            <JobButton href="#" color="var(--main3)" hoverColor="var(--main1)" className="mt-[clamp(10rem,28vh,18rem)]">
+            <JobButton href="/desktop-3" color="var(--main3)" hoverColor="var(--main1)" className="mt-[clamp(10rem,28vh,18rem)]">
               Are you ready?
             </JobButton>
           </div>
