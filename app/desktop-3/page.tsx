@@ -3,175 +3,182 @@
 import { JobButton } from "../components/job-button";
 import { climateCrisis } from "../font";
 import Image from "next/image";
-import { useState } from "react";
 import ButtonFoldable from "../components/ButtonFoldable";
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOpen = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <main className="relative  h-svh overflow-hidden bg-[var(--main6)] flex gap-4">
-      <div className="relative max-w-1/2">
-        <div className="absolute top-0 left-0">
-          <Image
-            src={"/desktop-3/1.png"}
-            width={949.43310546875}
-            height={917.0413208007812}
-            alt=""
-          ></Image>
-        </div>
-        <div className=" ">
-          <Image
-            src={"/desktop-3/2.png"}
-            width={949.43310546875}
-            height={917.0413208007812}
-            alt=""
-          ></Image>
-        </div>
-        <div className="absolute top-[10%] left-[10%] bg-[var(--main5)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[16px] p-[clamp(0.25rem,24px,2rem)] max-w-md w-1/2">
+    <main className="relative min-h-svh overflow-x-hidden bg-[var(--main6)]">
+      <div className="mx-auto grid min-h-svh max-w-[1600px] grid-cols-1 gap-8 px-5 py-8 sm:px-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-10 lg:px-12 lg:py-10">
+        <section className="relative flex min-h-[520px] items-center justify-center lg:min-h-0">
+          <div className="absolute inset-0">
+            <Image
+              src={"/desktop-3/1.png"}
+              width={949.43310546875}
+              height={917.0413208007812}
+              alt=""
+              className="h-full w-full object-contain object-center absolute top-0 z-1"
+            ></Image>
+            <Image
+              src={"/desktop-3/2.png"}
+              width={949.43310546875}
+              height={917.0413208007812}
+              alt=""
+              className="h-full w-full object-contain absolute top-0"
+            ></Image>
+          </div>
+          <div className="relative aspect-[949/917] w-full max-w-[760px] z-2">
+            <div className="absolute left-[5%] top-[8%] w-[min(88%,390px)] rounded-[16px] bg-[var(--main5)] p-[clamp(1rem,2.5vw,2rem)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)] sm:left-[10%] sm:top-[10%]">
+              <div
+                className={`${climateCrisis.className} text-[clamp(1.7rem,3.2vw,2.5rem)] leading-[1.1] text-[var(--main1)]`}
+              >
+                Hi! This is Nguyen
+              </div>
+              <div className="space-y-2 pt-4 sm:space-y-3">
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div>
+                    <Image
+                      src={"/icon/person.png"}
+                      alt=""
+                      width={36}
+                      height={36}
+                      className="size-6 sm:size-9"
+                    ></Image>
+                  </div>
+                  <div className="text-[clamp(0.95rem,2vw,1.5rem)]">
+                    Vo Phan Thuc Nguyen
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div>
+                    <Image
+                      src={"/icon/cake.png"}
+                      alt=""
+                      width={36}
+                      height={36}
+                      className="size-6 sm:size-9"
+                    ></Image>
+                  </div>
+                  <div className="text-[clamp(0.95rem,2vw,1.5rem)]">June 4</div>
+                </div>
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div>
+                    <Image
+                      src={"/icon/coin.png"}
+                      alt=""
+                      width={36}
+                      height={36}
+                      className="size-6 sm:size-9"
+                    ></Image>
+                  </div>
+                  <div className="text-[clamp(0.95rem,2vw,1.5rem)]">Gemini</div>
+                </div>
+                <div className="flex items-center gap-2 sm:gap-4">
+                  <div>
+                    <Image
+                      src={"/icon/hat.png"}
+                      alt=""
+                      width={36}
+                      height={36}
+                      className="size-6 sm:size-9"
+                    ></Image>
+                  </div>
+                  <div className="text-[clamp(0.95rem,2vw,1.5rem)]">
+                    Miss Hall&apos;s School
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex flex-col justify-center gap-8 py-4 lg:gap-10 lg:py-8">
           <div
-            className={`${climateCrisis.className} text-[var(--main1)] text-[clamp(2rem,36px,4rem)] leading-[1.2]`}
+            className={`${climateCrisis.className} text-[clamp(2rem,4vw,3rem)] leading-[1.05] text-[var(--main2)]`}
           >
-            Hi! This is Nguyen
+            Your first step is to choose{" "}
+            <span className=" text-[var(--main4)]">fish sauce</span> or{" "}
+            <span className=" text-[var(--main4)]">side dish,..</span> or maybe{" "}
+            <span className=" text-[var(--main4)]"> both</span>
           </div>
-          <div className="pt-4">
-            <div className="flex items-center gap-4">
-              <div>
-                <Image
-                  src={"/icon/person.png"}
-                  alt=""
-                  width={36}
-                  height={36}
-                  className="size-9"
-                ></Image>
-              </div>
-              <div className="text-[clamp(1.5rem,24px,2.3rem)] ">
-                Vo Phan Thuc Nguyen
-              </div>
-            </div>
-            <div className="flex items-center gap-4">
-              <div>
-                <Image
-                  src={"/icon/cake.png"}
-                  alt=""
-                  width={36}
-                  height={36}
-                  className="size-9"
-                ></Image>
-              </div>
-              <div className="text-[clamp(1.5rem,24px,2.3rem)] ">June 4</div>
-            </div>
-            <div className="flex items-center gap-4">
-              <div>
-                <Image
-                  src={"/icon/coin.png"}
-                  alt=""
-                  width={36}
-                  height={36}
-                  className="size-9"
-                ></Image>
-              </div>
-              <div className="text-[clamp(1.5rem,24px,2.3rem)] ">Gemini</div>
-            </div>
-            <div className="flex items-center gap-4">
-              <div>
-                <Image
-                  src={"/icon/hat.png"}
-                  alt=""
-                  width={36}
-                  height={36}
-                  className="size-9"
-                ></Image>
-              </div>
-              <div className="text-[clamp(1.5rem,24px,2.3rem)] ">
-                Miss Hall&apos;s School
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div className="max-w-1/2 flex flex-col justify-evenly">
-        <div
-          className={`${climateCrisis.className} text-[clamp(2rem,40px,3rem)] text-[var(--main2)] leading-[1.2]`}
-        >
-          Your first step is to choose{" "}
-          <span className=" text-[var(--main4)]">fish sauce</span> or{" "}
-          <span className=" text-[var(--main4)]">side dish,..</span> or maybe{" "}
-          <span className=" text-[var(--main4)]"> both</span>
-        </div>
-
-        <div className="grid grid-cols-2 gap-4 ">
-          <div className="">
-            <div className="relative  ">
-              <Image
-                className="-rotate-10 relative z-1"
-                src={"/food/nuocmam-1.png"}
-                alt=" "
-                width={344.39133404156513}
-                height={254.93901590354906}
-              ></Image>
-              <Image src={"/desktop-3/3.png"} fill alt=""></Image>
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-4">
+            <div>
+              <div className="relative aspect-[344/255]">
+                <Image
+                  className="relative z-1 h-full w-full -rotate-10 object-contain"
+                  src={"/food/nuocmam-1.png"}
+                  alt=" "
+                  width={344.39133404156513}
+                  height={254.93901590354906}
+                ></Image>
+                <Image
+                  src={"/desktop-3/3.png"}
+                  fill
+                  alt=""
+                  className="object-contain"
+                ></Image>
+              </div>
             </div>
-          </div>
-          <div className="">
-            <div className="relative  ">
-              <Image
-                className="-rotate-10 relative z-1 left-15"
-                src={"/food/duachuot-2.png"}
-                alt=" "
-                width={220.64871148263126}
-                height={175.7711786610508}
-              ></Image>
-              <Image
-                className="-rotate-10 absolute z-1 top-10 left-0 rotate-20 "
-                src={"/food/carot-1.png"}
-                alt=" "
-                width={220.64871148263126}
-                height={175.7711786610508}
-              ></Image>
-              <Image
-                className="-rotate-10 absolute z-1 top-35 left-18 rotate-5"
-                src={"/food/rau-cu-1.png"}
-                alt=" "
-                width={220.64871148263126}
-                height={175.7711786610508}
-              ></Image>
-              <Image src={"/desktop-3/4.png"} fill alt=""></Image>
+            <div>
+              <div className="relative aspect-[344/255]">
+                <Image
+                  className="relative left-[12%] z-1 h-auto w-[64%] -rotate-10 object-contain"
+                  src={"/food/duachuot-2.png"}
+                  alt=" "
+                  width={220.64871148263126}
+                  height={175.7711786610508}
+                ></Image>
+                <Image
+                  className="absolute left-0 top-[14%] z-1 h-auto w-[64%] rotate-20 object-contain"
+                  src={"/food/carot-1.png"}
+                  alt=" "
+                  width={220.64871148263126}
+                  height={175.7711786610508}
+                ></Image>
+                <Image
+                  className="absolute left-[18%] top-[48%] z-1 h-auto w-[64%] rotate-5 object-contain"
+                  src={"/food/rau-cu-1.png"}
+                  alt=" "
+                  width={220.64871148263126}
+                  height={175.7711786610508}
+                ></Image>
+                <Image
+                  src={"/desktop-3/4.png"}
+                  fill
+                  alt=""
+                  className="object-contain"
+                ></Image>
+              </div>
             </div>
+            <ButtonFoldable
+              texts={[
+                "Dancing",
+                "Sketch and sew random piece of clothing",
+                "Knitting while Watching series of dramas",
+                "Reading",
+              ]}
+              title="Fish sauce"
+            />
+            <ButtonFoldable
+              title="Extra toppings"
+              texts={[
+                "Used to be a voice actress for advertisements",
+                "Participated in a Netflix series",
+              ]}
+            />
           </div>
-          <ButtonFoldable
-            texts={[
-              "Dancing",
-              "Sketch and sew random piece of clothing",
-              "Knitting while Watching series of dramas",
-              "Reading",
-            ]}
-            title="Fish sauce"
-          />
-          <ButtonFoldable
-            title="Extra toppings"
-            texts={[
-              "Used to be a voice actress for advertisements",
-              "Participated in a Netflix series",
-            ]}
-          />
-        </div>
 
-        <div className=" ">
-          <JobButton
-            href="/desktop-4"
-            color="var(--main3)"
-            hoverColor="var(--main1)"
-            className=" "
-          >
-            Let’s get on to main ingredients
-          </JobButton>
-        </div>
+          <div>
+            <JobButton
+              href="/desktop-4"
+              color="var(--main3)"
+              hoverColor="var(--main1)"
+              className=" "
+            >
+              Let’s get on to main ingredients
+            </JobButton>
+          </div>
+        </section>
       </div>
     </main>
   );
