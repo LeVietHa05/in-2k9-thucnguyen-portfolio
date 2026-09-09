@@ -101,8 +101,8 @@ export default function Home() {
             <span className=" text-[var(--main4)]"> both</span>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-4">
-            <div>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-4">
+            <div className="flex flex-col gap-3">
               <div className="relative aspect-[344/255]">
                 <Image
                   className="relative z-1 h-full w-full -rotate-10 object-contain"
@@ -118,8 +118,17 @@ export default function Home() {
                   className="object-contain"
                 ></Image>
               </div>
+              <ButtonFoldable
+                texts={[
+                  "Dancing",
+                  "Sketch and sew random piece of clothing",
+                  "Knitting while Watching series of dramas",
+                  "Reading",
+                ]}
+                title="Fish sauce"
+              />
             </div>
-            <div>
+            <div className="flex flex-col gap-3">
               <div className="relative aspect-[344/255]">
                 <Image
                   className="relative left-[12%] z-1 h-auto w-[64%] -rotate-10 object-contain"
@@ -149,23 +158,14 @@ export default function Home() {
                   className="object-contain"
                 ></Image>
               </div>
+              <ButtonFoldable
+                title="Extra toppings"
+                texts={[
+                  "Used to be a voice actress for advertisements",
+                  "Participated in a Netflix series",
+                ]}
+              />
             </div>
-            <ButtonFoldable
-              texts={[
-                "Dancing",
-                "Sketch and sew random piece of clothing",
-                "Knitting while Watching series of dramas",
-                "Reading",
-              ]}
-              title="Fish sauce"
-            />
-            <ButtonFoldable
-              title="Extra toppings"
-              texts={[
-                "Used to be a voice actress for advertisements",
-                "Participated in a Netflix series",
-              ]}
-            />
           </div>
 
           <div>

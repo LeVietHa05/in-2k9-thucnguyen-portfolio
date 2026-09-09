@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
 import { climateCrisis } from "../font";
@@ -11,6 +13,7 @@ type JobButtonProps = {
   className?: string;
   target?: "_self" | "_blank";
   onClick?: () => void;
+  isBack?: boolean;
 };
 
 export function JobButton({
@@ -20,6 +23,7 @@ export function JobButton({
   hoverColor = "var(--main2)",
   className = "",
   target,
+  isBack = false,
   onClick,
 }: JobButtonProps) {
   const style = {
@@ -41,9 +45,43 @@ export function JobButton({
       className={`group job-button ${className} rounded-full   ${climateCrisis.className}`}
       style={style}
     >
+      {isBack && (
+        <>
+          <Image
+            src={"/arrow-right-1.svg"}
+            alt=""
+            width={36}
+            height={26}
+            className="group-hover:hidden"
+          ></Image>
+          <Image
+            src={"/arrow-right-2.svg"}
+            alt=""
+            width={36}
+            height={26}
+            className="group-hover:block hidden"
+          ></Image>
+        </>
+      )}
       <span className="job-button__label">{children}</span>
-      <Image src={"/arrow-left-1.svg"} alt="" width={36} height={26} className="group-hover:hidden"></Image>
-      <Image src={"/arrow-left-2.svg"} alt="" width={36} height={26} className="group-hover:block hidden"></Image>
+      {!isBack && (
+        <>
+          <Image
+            src={"/arrow-left-1.svg"}
+            alt=""
+            width={36}
+            height={26}
+            className="group-hover:hidden"
+          ></Image>
+          <Image
+            src={"/arrow-left-2.svg"}
+            alt=""
+            width={36}
+            height={26}
+            className="group-hover:block hidden"
+          ></Image>
+        </>
+      )}
     </Link>
   );
 }

@@ -39,7 +39,7 @@ const ingredients = [
 
 export default function DesktopFour() {
   return (
-    <main className="min-h-svh bg-[var(--main6)] px-6 py-16 sm:px-10 lg:px-16 lg:py-36">
+    <main className="min-h-svh bg-[var(--main6)] px-6 py-16 sm:px-10 lg:px-16 lg:py-36 flex items-center justify-center">
       <section className="mx-auto grid max-w-[1150px] grid-cols-2 gap-x-8 gap-y-16 sm:gap-x-12 lg:grid-cols-4 lg:gap-x-14">
         {ingredients.map((ingredient) => (
           <Link
