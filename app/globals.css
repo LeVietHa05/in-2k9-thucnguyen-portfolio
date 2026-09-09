@@ -33,7 +33,7 @@ body {
   gap: 1.25rem;
   overflow: hidden;  
   padding:1rem  1.5rem;
-  color: var(--main5);
+  color: var(--job-button-text-color);
   background: var(--job-button-color);
   font-size: 1.125rem; 
   text-decoration: none;
@@ -44,7 +44,7 @@ body {
 .job-button:hover,
 .job-button:focus-visible {
   background: var(--job-button-hover-color);
-  color: var(--main4);
+  color: var(--job-button-hover-text-color);
   transform: translateY(-3px);
 }
 

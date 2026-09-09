@@ -3,8 +3,10 @@ import { climateCrisis } from "../font";
 import ImageCard from "../components/ImageCard";
 import { JobButton } from "../components/job-button";
 import DriveVideoCard from "../components/DriveVideoThumb";
+import { redirect } from 'next/navigation'
 
-export default function DesktopSix() {
+export default function DesktopSeven() {
+  redirect('/desktop-8')
   return (
     <main className="min-h-svh bg-[var(--main6)] px-6 pt-16 sm:px-0 max-w-7xl mx-auto ">
       <section id="one" className="flex">

@@ -2,9 +2,9 @@ import Image from "next/image";
 import { climateCrisis } from "../font";
 import ImageCard from "../components/ImageCard";
 import { JobButton } from "../components/job-button";
-import DriveVideoCard from "../components/DriveVideoThumb";
+import DriveVideoCard from "../components/DriveVideoThumb"; 
 
-export default function DesktopSix() {
+export default function DesktopEight() { 
   return (
     <main className="min-h-svh bg-[var(--main6)] px-6 pt-16 sm:px-0 max-w-7xl mx-auto ">
       <section id="one" className="flex">

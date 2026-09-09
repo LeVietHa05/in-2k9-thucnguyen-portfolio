@@ -10,6 +10,8 @@ type JobButtonProps = {
   children?: ReactNode;
   color?: string;
   hoverColor?: string;
+  textColor?: string;
+  hoverTextColor?: string;
   className?: string;
   target?: "_self" | "_blank";
   onClick?: () => void;
@@ -21,6 +23,8 @@ export function JobButton({
   children = "View job",
   color = "var(--main1)",
   hoverColor = "var(--main2)",
+  textColor = "var(--main5)",
+  hoverTextColor = "var(--main4)",
   className = "",
   target,
   isBack = false,
@@ -29,6 +33,8 @@ export function JobButton({
   const style = {
     "--job-button-color": color,
     "--job-button-hover-color": hoverColor,
+    "--job-button-text-color": textColor,
+    "--job-button-hover-text-color": hoverTextColor,
   } as CSSProperties;
 
   return (
