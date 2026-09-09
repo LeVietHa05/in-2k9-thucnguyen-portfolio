@@ -50,7 +50,7 @@ export default function ImageCard({
         ))}
       </div>
       <div
-        className={`rounded-lg mt-6 mb-8 px-4 py-5 text-center text-[clamp(1rem,2vw,1.5rem)] leading-tight shadow-md bg-[var(--${textbgcolor})]`}
+        className={`rounded-lg mt-6 mb-8 px-8 py-5 text-center text-[clamp(1rem,2vw,1.5rem)] leading-tight shadow-md bg-[var(--${textbgcolor})]`}
       >
         <span className={`text-[var(--${textcolor})]`}>{title}</span>
       </div>
