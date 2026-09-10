@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { climateCrisis } from "../font";
+import { climateCrisis, darumadropOne } from "../font";
 import ImageCard from "../components/ImageCard";
 import { JobButton } from "../components/job-button";
-import DriveVideoCard from "../components/DriveVideoThumb"; 
+import DriveVideoCard from "../components/DriveVideoThumb";
 
-export default function DesktopEight() { 
+export default function DesktopEight() {
   return (
     <main className="min-h-svh bg-[var(--main6)] px-6 pt-16 sm:px-0 max-w-7xl mx-auto ">
       <section id="one" className="flex">
@@ -12,36 +12,30 @@ export default function DesktopEight() {
           <div
             className={`${climateCrisis.className} text-[40px] leading-[50px]`}
           >
-            <span className="text-[var(--main1)]">Ingredient 2: </span>
+            <span className="text-[var(--main1)]">Ingredient 4: </span>
             <br />
             <span className="text-[var(--main4)]">
-              The Centerpiece - Grill Pork Chop
+              The Creative Spark - Fried Egg{" "}
+              <span className={`text-2xl ${darumadropOne.className}`}>
+                {" "}
+                (aka Trung Chien)
+              </span>
             </span>
           </div>
           <div className="text-2xl">
-            During the process of learning the recipe of who I am, I realized
-            that every memorable dish needs a bold, high-energy core. For me,
-            It’s SUON NUONG aka GRILL PORK CHOP. Just as a master chef marinates
-            and sears a pork chop over open charcoal flames, my experience in
-            Dance taught me how to turn pressure into art.
+            Besides my work in economics and sports, fashion is the golden yolk
+            that brings color and identity to my plate. A passion since
+            childhood, fashion is where my rawest creativity lives.
           </div>
           <div className="flex justify-around min-h-[220px] border-b-3 border-dashed">
             <div className="flex items-end">
               <Image
-                src={"/desktop-6/1.png"}
+                src={"/desktop-8/1.svg"}
                 alt=""
-                width={188}
-                height={285}
+                width={734.580078125}
+                height={428}
                 className=" "
               ></Image>
-            </div>
-            <div className="flex items-start">
-              <Image
-                src={"/desktop-6/2.png"}
-                alt=""
-                width={223}
-                height={236}
-              ></Image>{" "}
             </div>
           </div>
           <div className={`${climateCrisis.className} pt-6`}>
@@ -51,7 +45,7 @@ export default function DesktopEight() {
         <div className=" w-1/2 shrink-0 p-16 pl-32 flex items-center justify-center ">
           <div className="rounded-full aspect-square bg-[var(--main4)] p-[clamp(1rem,48px,4rem)] w-full shadow-lg/50 flex items-center justify-center">
             <Image
-              src={"/food/suon-1.png"}
+              src={"/food/trung-1.png"}
               alt=""
               width={479}
               height={380}
@@ -62,72 +56,108 @@ export default function DesktopEight() {
       </section>
 
       <section id="two" className="my-16 lg:my-32">
-        <div className="bg-[var(--main2)] text-[var(--main5)] text-center text-[clamp(1rem,25px,2rem)]   p-2 rounded-md">
+        <div className="bg-[var(--main2)] text-[var(--main5)] text-center text-[clamp(1rem,1.5vw,2rem)]   p-2 rounded-md">
           <div
-            className={`text-[clamp(2rem,40px,3rem)] ${climateCrisis.className} leading-[55px]`}
+            className={`text-[clamp(2rem,2.5vw,3rem)] ${climateCrisis.className} leading-[55px]`}
           >
-            Preparation: The Marinade
+            Preparation: Cracking the Shell
           </div>
-          <div>Letting flavor soaked in deep</div>
+          <div>
+            From Childhood passion of a little girl’s dream to paper sketches
+          </div>
         </div>
 
         <div className="flex justify-center gap-6 mt-15">
-          <ImageCard
-            imgs={["/desktop-6/3.png"]}
-            textbgcolor="main5"
-            textcolor="main1"
-            title="10 Hours/Week practicing hardly in the dance studio"
-          />
-          <ImageCard
-            imgs={["/desktop-6/4.png"]}
-            textbgcolor="main5"
-            textcolor="main1"
-            title="Building discipline, muscle memory, and flexibility."
-          />
+          {[
+            "/desktop-8/1.png",
+            "/desktop-8/2.png",
+            "/desktop-8/3.png",
+            "/desktop-8/4.png",
+          ].map((e, i) => (
+            <div key={i}>
+              <Image src={e} alt="" width={414} height={547}></Image>
+            </div>
+          ))}
+        </div>
+        <div className="text-center text-[var(--main5)] bg-[var(--main1)] text-2xl p-6 max-w-2xl mx-auto rounded-lg shadow-lg/20 my-15">
+          Translating childhood passion into active creation, moving from
+          passive inspiration straight to the drawing board.
         </div>
       </section>
 
-      <section id="three" className="my-16 lg:my-32">
-        <div className="bg-[var(--main2)] text-[var(--main5)] text-center text-[clamp(1rem,25px,2rem)]   p-2 rounded-md">
-          <div
-            className={`text-[clamp(2rem,40px,3rem)] ${climateCrisis.className} leading-[55px]`}
-          >
-            Execution: The Charcoal Fire
+      <section
+        id="three"
+        className="mt-16 lg:mt-32 relative w-screen left-1/2 -translate-x-1/2 bg-[var(--main5)]"
+      >
+        <div className="absolute top-0 left-1/2 -translate-1/2">
+          <Image
+            src={"/desktop-8/5.png"}
+            alt=""
+            width={573}
+            height={573}
+          ></Image>
+        </div>
+        <div className="max-w-7xl mx-auto py-32 pt-48">
+          <div className="bg-[var(--main2)] text-[var(--main6)] text-center text-[clamp(1rem,25px,2rem)]   p-2 rounded-md">
+            <div
+              className={`text-[clamp(2rem,40px,3rem)] ${climateCrisis.className} leading-[55px]`}
+            >
+              Execution: High Heat & Craftmanship
+            </div>
+          </div>
+          <div className="my-8 max-w-5xl mx-auto">
+            <Image
+              src={"/desktop-8/6.png"}
+              alt=""
+              width={1140}
+              height={1066.55615234375}
+            />
+          </div>
+          <div className="text-center text-[var(--main6)] bg-[var(--main1)] text-2xl p-6 max-w-2xl mx-auto rounded-lg shadow-lg/20">
+            Performing under spotlights = Searing over high heat.
+          </div>
+
+          <div className="flex gap-6 py-16">
+            {["/desktop-8/7.png", "/desktop-8/8.png", "/desktop-8/9.png"].map(
+              (e, i) => {
+                return (
+                  <div key={i}>
+                    <Image
+                      className="h-full"
+                      src={e}
+                      alt=""
+                      width={i != 1 ? 433 : 754.069091796875}
+                      height={754}
+                    ></Image>
+                  </div>
+                );
+              },
+            )}
+          </div>
+          <div className="text-center text-[var(--main6)] bg-[var(--main1)] text-2xl p-6 max-w-2xl mx-auto rounded-lg shadow-lg/20">
+            Bringing concepts into real life when directing photoshoots from
+            garment and makeup to final visual framing.
           </div>
         </div>
-        <div className="my-8 max-w-5xl mx-auto">
-          <DriveVideoCard fileId="1oVpMIq6x6cpAaBk51XS0vPMoPidDun_a" />
-        </div>
-        <div className="text-center text-[var(--main1)] bg-[var(--main5)] text-2xl p-6 max-w-2xl mx-auto rounded-lg shadow-lg/20">
-          Performing under spotlights = Searing over high heat.
-        </div>
       </section>
 
       <section
+        className="relative bg-[var(--main2)] left-1/2 -translate-x-1/2 w-screen"
         id="four"
-        className="w-screen relative left-1/2 -translate-x-1/2"
       >
-        <Image
-          src={"/desktop-6/5.png"}
-          alt=""
-          width={1920}
-          height={1280}
-          className="w-full h-auto"
-        ></Image>
-        <div className="text-center text-[var(--main1)] bg-[var(--main5)] text-2xl p-6 max-w-2xl mx-auto rounded-lg shadow-lg/20 my-15">
-          Learning how to stay calm under pressure and channel energy into
-          sharp, expressive movement.
+        <div className="absolute top-0 left-1/2 -translate-1/2">
+          <Image
+            src={"/desktop-8/10.png"}
+            alt=""
+            width={573}
+            height={573}
+            className="pointer-none"
+          ></Image>
         </div>
-      </section>
-
-      <section
-        className="relative bg-[var(--main1)] left-1/2 -translate-x-1/2 w-screen"
-        id="five "
-      >
-        <div className="py-16 flex justify-center gap-6">
+        <div className="py-16 pt-48 flex justify-center gap-6">
           <JobButton
             href="/desktop-4"
-            color="var(--main2)"
+            color="var(--main3)"
             hoverColor="var(--main4)"
             textColor="var(--main5)"
             hoverTextColor="var(--main5)"
@@ -137,9 +167,9 @@ export default function DesktopEight() {
             Back to ingredient
           </JobButton>
           <JobButton
-            href="/desktop-7"
-            color="var(--main2)"
-            hoverColor="var(--main4)"
+            href="/desktop-9"
+            color="var(--main3)"
+            hoverColor="var(--main1)"
             textColor="var(--main5)"
             hoverTextColor="var(--main5)"
             className=" "
