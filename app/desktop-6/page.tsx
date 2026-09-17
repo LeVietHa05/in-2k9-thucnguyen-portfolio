@@ -107,6 +107,22 @@ export default function DesktopSix() {
         id="four"
         className="w-screen relative left-1/2 -translate-x-1/2"
       >
+        <div id="three-point-five" className="flex ">
+          <Image
+            src={"/desktop-6/6.png"}
+            alt=""
+            width={1920}
+            height={1280}
+            className="w-full h-auto"
+          ></Image>
+          <Image
+            src={"/desktop-6/7.png"}
+            alt=""
+            width={1920}
+            height={1280}
+            className="w-full h-auto"
+          ></Image>
+        </div>
         <Image
           src={"/desktop-6/5.png"}
           alt=""
