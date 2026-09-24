@@ -6,7 +6,7 @@ import DriveVideoCard from "../components/DriveVideoThumb";
 
 export default function DesktopEight() {
   return (
-    <main className="min-h-svh bg-[var(--main6)] px-6 pt-16 sm:px-0 max-w-7xl mx-auto ">
+    <main className="mx-auto min-h-svh w-full max-w-[1920px] bg-[var(--main6)] px-6 pt-16 sm:px-10 lg:px-16">
       <section id="one" className="flex">
         <div className="bg-white p-8 text-[var(--main2)] w-1/2 shadow-lg/50 rounded-xl">
           <div
@@ -97,7 +97,7 @@ export default function DesktopEight() {
             height={573}
           ></Image>
         </div>
-        <div className="max-w-7xl mx-auto py-32 pt-48">
+        <div className="mx-auto w-full max-w-[1728px] py-32 pt-48">
           <div className="bg-[var(--main2)] text-[var(--main6)] text-center text-[clamp(1rem,25px,2rem)]   p-2 rounded-md">
             <div
               className={`text-[clamp(2rem,40px,3rem)] ${climateCrisis.className} leading-[55px]`}
@@ -105,7 +105,7 @@ export default function DesktopEight() {
               Execution: High Heat & Craftmanship
             </div>
           </div>
-          <div className="my-8 max-w-5xl mx-auto">
+          <div className="my-8 mx-auto w-full max-w-[1280px]">
             <Image
               src={"/desktop-8/6.png"}
               alt=""

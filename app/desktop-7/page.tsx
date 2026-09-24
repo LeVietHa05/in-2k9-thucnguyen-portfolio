@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function DesktopSeven() {
   return (
-    <main className="min-h-svh bg-[var(--main6)] px-6 pt-16 sm:px-0 max-w-7xl mx-auto ">
+    <main className="mx-auto min-h-svh w-full max-w-[1920px] bg-[var(--main6)] px-6 pt-16 sm:px-10 lg:px-16">
       <section id="one" className="flex">
         <div className="bg-white p-8 text-[var(--main2)] w-1/2 shadow-lg/50 rounded-xl">
           <div
@@ -71,7 +71,7 @@ export default function DesktopSeven() {
         </div>
 
         <div className="flex flex-col justify-center gap-6 mt-15">
-          <div className="my-8 max-w-5xl mx-auto">
+          <div className="my-8 mx-auto w-full max-w-[1280px]">
             <Image
               src={"/desktop-7/1.png"}
               alt=""
@@ -86,7 +86,7 @@ export default function DesktopSeven() {
             textcolor="main5"
             bgcolor="main2"
           />
-          <div className=" max-w-5xl w-full mx-auto">
+          <div className="mx-auto w-full max-w-[1280px]">
             <Image
               src={"/desktop-7/2.png"}
               alt=""
@@ -95,7 +95,7 @@ export default function DesktopSeven() {
               className="w-full"
             ></Image>
           </div>
-          <div className=" max-w-5xl w-full mx-auto">
+          <div className="mx-auto w-full max-w-[1280px]">
             <Image
               src={"/desktop-7/3.png"}
               alt=""
@@ -104,7 +104,7 @@ export default function DesktopSeven() {
               className="w-full"
             ></Image>
           </div>
-          <div className=" max-w-5xl w-full mx-auto">
+          <div className="mx-auto w-full max-w-[1280px]">
             <Image
               src={"/desktop-7/4.png"}
               alt=""
@@ -136,7 +136,7 @@ export default function DesktopSeven() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 justify-center items-center gap-4 max-w-7xl mx-auto pb-48">
+        <div className="mx-auto grid w-full max-w-[1728px] grid-cols-3 items-center justify-center gap-6 pb-48">
           <Essaycard
             width={462.2939147949219}
             height={635.857421875}
@@ -179,7 +179,7 @@ export default function DesktopSeven() {
           className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"
         ></Image>
         <div className="pt-48">
-          <div className="bg-[var(--main5)] text-[var(--main1)] text-center text-[clamp(1rem,25px,2rem)]   p-2 rounded-md max-w-7xl mx-auto">
+          <div className="mx-auto w-full max-w-[1728px] rounded-md bg-[var(--main5)] p-2 text-center text-[clamp(1rem,25px,2rem)] text-[var(--main1)]">
             <div
               className={`text-[clamp(2rem,40px,3rem)] ${climateCrisis.className} leading-[55px]`}
             >

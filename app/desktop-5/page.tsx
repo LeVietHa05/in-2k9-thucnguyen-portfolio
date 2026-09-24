@@ -35,7 +35,7 @@ const results = [
 
 export default function DesktopFive() {
   return (
-    <main className="min-h-svh bg-[var(--main6)] px-6 py-16 sm:px-0 max-w-7xl mx-auto ">
+    <main className="mx-auto min-h-svh w-full max-w-[1920px] bg-[var(--main6)] px-6 py-16 sm:px-10 lg:px-16">
       <section id="one" className="flex">
         <div className="bg-white p-8 text-[var(--main2)] w-1/2 shadow-lg/50 rounded-xl">
           <div
@@ -217,7 +217,7 @@ export default function DesktopFive() {
         id="four"
         className="mt-16 lg:mt-32 py-16 pb-32 relative w-screen -translate-x-1/2 left-1/2 bg-[var(--main4)]"
       >
-        <div className="max-w-7xl mx-auto bg-[var(--main5)] text-[var(--main1)] text-center text-[clamp(1rem,25px,2rem)] leading-[25px] p-2 rounded-md mb-12">
+        <div className="mx-auto mb-12 w-full max-w-[1728px] rounded-md bg-[var(--main5)] p-2 text-center text-[clamp(1rem,25px,2rem)] leading-[25px] text-[var(--main1)]">
           <div
             className={`text-[clamp(2rem,40px,3rem)] ${climateCrisis.className} leading-[55px]`}
           >
@@ -225,7 +225,7 @@ export default function DesktopFive() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 mx-auto max-w-6xl gap-6">
+        <div className="mx-auto grid w-full max-w-[1728px] grid-cols-2 gap-6">
           {results.map((each, i) => {
             return (
               <ImageCard
@@ -238,7 +238,7 @@ export default function DesktopFive() {
             );
           })}
         </div>
-        <div className="mx-auto max-w-5xl flex justify-end">
+        <div className="mx-auto flex w-full max-w-[1728px] justify-end">
           <JobButton
             href="https://drive.google.com/file/d/1BVTN674bJiBBavc0hkx0pmOUEJimIgoT/view?usp=sharing"
             color="var(--main1)"

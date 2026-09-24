@@ -15,7 +15,7 @@ export default function Home() {
         <>
       <div className="absolute right-[12%] top-[10%] z-0 h-[27rem] w-[23rem] rotate-[22deg] rounded-[45%_55%_50%_50%] bg-[var(--main4)] opacity-95 max-md:right-[-10%] max-md:top-[39%] max-md:h-[15rem] max-md:w-[19rem]" />
       <div className="absolute bottom-[-28%] right-[-7%] z-0 h-[32rem] w-[52rem] -rotate-[9deg] rounded-[45%_55%_50%_50%] bg-[var(--main5)]" />
-      <section className="relative z-[1] mx-auto grid min-h-svh max-w-[1440px] grid-cols-[minmax(320px,0.82fr)_minmax(420px,1.18fr)] items-center gap-[clamp(2rem,5vw,6rem)] px-[clamp(1.5rem,6vw,5rem)]  max-md:grid-cols-1 max-md:gap-4 max-md:pt-12">
+      <section className="relative z-[1] mx-auto grid min-h-svh w-full max-w-[1920px] grid-cols-[minmax(320px,0.82fr)_minmax(420px,1.18fr)] items-center gap-[clamp(2rem,5vw,6rem)] px-[clamp(1.5rem,6vw,5rem)]  max-md:grid-cols-1 max-md:gap-4 max-md:pt-12">
         <div className="max-w-[480px] max-md:max-w-[580px]">
           <div className={`${climateCrisis.className} capitalize`}>
             <p className="m-0 text-[clamp(2.5rem,50px,4.4rem)]   leading-[0.88]   capitalize text-[var(--main1)] ">
@@ -64,14 +64,14 @@ export default function Home() {
         </>
       )}
       {screen === "chef" && <section className="relative min-h-svh overflow-hidden bg-[var(--main6)]">
-        <div className="mx-auto grid min-h-svh max-w-[1440px] grid-cols-[0.8fr_1.2fr] items-center gap-10 px-[clamp(1.5rem,6vw,5rem)]   max-md:grid-cols-1 max-md:py-10">
-          <div className="max-w-[390px] self-start pt-[8vh] max-md:pt-0">
+        <div className="mx-auto grid min-h-svh w-full max-w-[1920px] grid-cols-[0.8fr_1.2fr] items-center gap-10 px-[clamp(1.5rem,6vw,5rem)]   max-md:grid-cols-1 max-md:py-10">
+          <div className="max-w-[590px] w-full self-center pt-[8vh] max-md:pt-0">
             <h2 className={`${climateCrisis.className} m-0 text-[clamp(2.6rem,50px,4.8rem)] leading-[0.9] text-[var(--main4)]`}>
               You will become
               <br />
               <span className="text-[var(--main1)]">a chef!</span>
             </h2>
-            <p className="mt-5 max-w-[330px] text-sm font-bold leading-[1.2] md:text-[24px]">
+            <p className="mt-5   text-sm font-bold leading-[1.2] md:text-[24px]">
               Here, your role is to become a chef. You&apos;re learning through a recipe to create a dish that is far more than just food on a plate. You are learning to craft a life, piece by piece, from the ground up.
             </p>
             <JobButton href="/desktop-3" color="var(--main3)" hoverColor="var(--main1)" className="mt-[clamp(10rem,28vh,18rem)]">

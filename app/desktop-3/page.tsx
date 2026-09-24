@@ -8,28 +8,28 @@ import ButtonFoldable from "../components/ButtonFoldable";
 export default function Home() {
   return (
     <main className="relative min-h-svh overflow-x-hidden bg-[var(--main6)]">
-      <div className="mx-auto grid min-h-svh max-w-[1600px] grid-cols-1 gap-8 px-5 py-8 sm:px-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-10 lg:px-12 lg:py-10">
+      <div className="mx-auto grid min-h-svh w-full max-w-[1920px] grid-cols-1 gap-8 px-5 py-8 sm:px-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:gap-10 lg:px-0 lg:py-10">
         <section className="relative flex min-h-[520px] items-center justify-center lg:min-h-0">
           <div className="absolute inset-0">
             <Image
               src={"/desktop-3/1.png"}
-              width={949.43310546875}
-              height={917.0413208007812}
+              width={1351}
+              height={1321}
               alt=""
-              className="h-full w-full object-contain object-center absolute top-0 z-1"
+              className="h-full w-full object-contain object-center absolute bottom-0 left-0 z-3"
             ></Image>
             <Image
               src={"/desktop-3/2.png"}
-              width={949.43310546875}
-              height={917.0413208007812}
+              width={1351}
+              height={1321}
               alt=""
-              className="h-full w-full object-contain absolute top-0"
+              className="h-full w-full object-contain absolute bottom-0 right-0"
             ></Image>
           </div>
           <div className="relative aspect-[949/917] w-full max-w-[760px] z-2">
-            <div className="absolute left-[5%] top-[8%] w-[min(88%,390px)] rounded-[16px] bg-[var(--main5)] p-[clamp(1rem,2.5vw,2rem)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)] sm:left-[10%] sm:top-[10%]">
+            <div className="absolute left-0 top-0 w-[min(88%,420px)] rounded-[16px] bg-[var(--main5)] p-[clamp(1rem,2.5vw,2rem)] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)]  ">
               <div
-                className={`${climateCrisis.className} text-[clamp(1.7rem,3.2vw,2.5rem)] leading-[1.1] text-[var(--main1)]`}
+                className={`${climateCrisis.className} text-[45px] leading-[1.1] text-[var(--main1)]`}
               >
                 Hi! This is Nguyen
               </div>

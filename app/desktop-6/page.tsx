@@ -6,7 +6,7 @@ import DriveVideoCard from "../components/DriveVideoThumb";
 
 export default function DesktopSix() {
   return (
-    <main className="min-h-svh bg-[var(--main6)] px-6 pt-16 sm:px-0 max-w-7xl mx-auto ">
+    <main className="mx-auto min-h-svh w-full max-w-[1920px] bg-[var(--main6)] px-6 pt-16 sm:px-10 lg:px-16">
       <section id="one" className="flex">
         <div className="bg-white p-8 text-[var(--main2)] w-1/2 shadow-lg/50 rounded-xl">
           <div

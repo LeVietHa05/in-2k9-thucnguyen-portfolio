@@ -6,7 +6,7 @@ import DriveVideoCard from "../components/DriveVideoThumb";
 
 export default function DesktopEight() {
   return (
-    <main className="min-h-svh bg-[var(--main6)] px-6 pt-16 sm:px-0 max-w-7xl mx-auto ">
+    <main className="mx-auto min-h-svh w-full max-w-[1920px] bg-[var(--main6)] px-6 pt-16 sm:px-10 lg:px-16">
       <div className="w-full min-h-screen  p-4 flex justify-center items-center">
         {/* Khung Hóa Đơn Chính */}
         <div className="w-full max-w-2xl bg-white rounded-3xl p-6 md:p-10 shadow-[8px_8px_0px_0px_rgba(218,206,191,1)] border border-stone-200">
